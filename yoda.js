@@ -11,10 +11,15 @@ var Yoda = function(){
       if(input){
         clearInterval(this.sleepiness);
         this.speak("Hmm...");
-        this.search(input).done(function(response){
-          this.speak(response);
-          this.awkwardSilence();
-        }.bind(this));
+        this.search(input)
+          .done(function(response){
+            this.speak(response);
+            this.awkwardSilence();
+          }.bind(this))
+          .fail(function(){
+            this.speak("Having trouble thinking, am I!");
+            this.awkwardSilence();
+          }.bind(this));
       }
     }
   }.bind(this));
