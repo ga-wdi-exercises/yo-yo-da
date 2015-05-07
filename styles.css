@@ -1,0 +1,45 @@
+*
+{
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing:border-box;
+}
+html, body
+{
+  position:relative;
+  height:100%;
+}
+#image
+{
+  height:60vh;
+  width:100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+}
+textarea
+{
+  display:block;
+  height:20vh;
+  width:100%;
+  padding:10px 50px;
+  text-align:center;
+  font-size:36px;
+  vertical-align:bottom;
+  resize:none;
+}
+textarea:focus
+{
+  outline:0;
+}
+#userInput
+{
+  font-family:"Comic Sans MS", "Comic Sans", cursive;
+}
+#yodaOutput
+{
+  font-family:"Papyrus";
+  font-weight:bold;
+  color:#270;
+}
