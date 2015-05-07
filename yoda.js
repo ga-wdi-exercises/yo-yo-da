@@ -1,3 +1,5 @@
+var el = {};
+
 var Yoda = function(){
 
   this.awkwardSilence();
@@ -42,3 +44,12 @@ Yoda.prototype = {
     }.bind(this), 5000);
   }
 };
+
+$(document).ready(function(){
+
+  el.yoda    = $("#image");
+  el.yousay  = $("#userInput");
+  el.yodasay = $("#yodaOutput");
+  var yoyoda = new Yoda();
+
+});
