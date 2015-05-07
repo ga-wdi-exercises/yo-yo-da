@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var el = {};
 
 var Yoda = function(){
@@ -58,3 +59,5 @@ $(document).ready(function(){
   var yoyoda = new Yoda();
 
 });
+=======
+>>>>>>> master
