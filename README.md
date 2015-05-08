@@ -6,6 +6,7 @@
 
 Make a Yoda translator! Your Javascript can be object-oriented, or not!
 
+
 When someone enters text and presses the "enter" key, send the text to the YodaSpeak API to figure out how Yoda would say it. Print the translated text in the Yoda-colored text area at the bottom of the page.
 
 Every 5 seconds, the text in the Yoda-colored text area should be replaced with "...", as if an awkward silence was falling. 
@@ -26,6 +27,13 @@ $.ajax({
 
 As a bonus, add in a response for when your AJAX requests *fail*.
 
+
+
+
 ## Test it out:
 
 http://ga-dc.github.io/yo-yo-da/
+
+
+
+
