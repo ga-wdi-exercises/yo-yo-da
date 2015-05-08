@@ -4,11 +4,12 @@ var textArea = $("#userInput")
 
 
 $(textArea).keypress(function(event){
-console.log("test")
+  console.log("test")
   var enter = event.which;
 
   if(enter === 13){
-    newAPICall = new YodaAPI(userInput);
+    newYoda = new YodaAPI(userInput)
+    // newAPICall = new YodaAPI(userInput);
   }
 });
 
@@ -42,18 +43,23 @@ function YodaAPI(userInput){
 
   var yodaOutput = $("#yodaOutput").val();
 
-  yodaOutput.val()
+  // yodaOutput.val()
 
 };
 
 
+newYoda = new YodaAPI("test")
+
+// curl --get --include 'https://yoda.p.mashape.com/yoda?sentence=You+will+learn+how+to+speak+like+me+someday.++Oh+wait.' \
+
+
 YodaAPI.prototype ={
-  api: function(userInput)
-  {$.ajax({
+  api:
+  $.ajax({
     url: "https://yoda.p.mashape.com/yoda?sentence=" + userInput,
     headers:{
       "X-Mashape-Key": "OGPgEThqxtmshCpTDZyOUBndDjLLp1Lm0qcjsnpxxdQawmnaj7"
     }
-  });
+  })
 
-}
+};
