@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
 var userInput = document.querySelector("#userInput")
+var yodaURL = "https://yoda.p.mashape.com/yoda?sentence="
+
+// need to put the below definition perhaps within the event listener
+var inputPhrase = userInput.split(" ").join("+")
 
   userInput.addEventListener( "keyup", function( event ){
     event.preventDefault()
@@ -8,10 +12,6 @@ var userInput = document.querySelector("#userInput")
       console.log( userInput.value )
     }
   })
-
-
-  var yodaURL = "https://yoda.p.mashape.com/yoda?sentence="
-  var inputPhrase = "super+duper"
 
   $.ajax({
     url:  yodaURL + inputPhrase,
