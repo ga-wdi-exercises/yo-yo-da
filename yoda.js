@@ -17,7 +17,7 @@ var Yoda = function(){
             this.awkwardSilence();
           }.bind(this))
           .fail(function(){
-            this.speak("Having trouble thinking, am I!");
+            this.speak("Having trouble thinking, am I! Ask later, should you.");
             this.awkwardSilence();
           }.bind(this));
       }
@@ -40,7 +40,8 @@ Yoda.prototype = {
       url: "https://yoda.p.mashape.com/yoda?sentence=" + query, 
       headers:{
         "X-Mashape-Key": "OGPgEThqxtmshCpTDZyOUBndDjLLp1Lm0qcjsnpxxdQawmnaj7"
-      }
+      },
+      timeout: 6000
     });
   },
   awkwardSilence: function(){
