@@ -29,6 +29,11 @@ textarea
   vertical-align:bottom;
   resize:none;
 }
+textarea,
+textarea:disabled
+{
+  background-color:transparent;
+}
 textarea:focus
 {
   outline:0;
