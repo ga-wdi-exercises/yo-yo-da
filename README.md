@@ -10,6 +10,8 @@ When someone enters text and presses the "enter" key, send the text to the YodaS
 
 Every 5 seconds, the text in the Yoda-colored text area should be replaced with "...", as if an awkward silence was falling. 
 
+Sadly, this API tends to break pretty easily. As a bonus, add in a response for when your AJAX requests *fail*.
+
 Below is an example of how you might communicate with the API. You can copy it directly, or modify it!
 
 ```
